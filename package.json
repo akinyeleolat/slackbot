@@ -1,0 +1,25 @@
+{
+  "name": "slackbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "verify": "slack-verify --secret $SLACK_SIGNING_SECRET --port=$PORT",
+    "start": "node ./index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/events-api": "^3.0.0",
+    "@slack/web-api": "^6.0.0",
+    "batteries-not-included": "^0.1.0",
+    "dotenv": "^8.2.0",
+    "env-cmd": "^10.1.0",
+    "mongodb": "^3.6.4"
+  },
+  "devDependencies": {
+    "ngrok": "^3.4.0"
+  }
+}
